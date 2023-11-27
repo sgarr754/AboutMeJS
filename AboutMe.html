@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="AboutMe.css">
+        <title>About Me</title>
+    </head>
+
+<body>
+    <header>
+        <div>
+            <h1>Your Name</h1>
+
+            <!-- this is the button where you can go dark mode or light mode.
+                This is also where you will make comparisons between JavaScript and React.js
+                Make sure to read the JavaScript code to better understand how this works, before building it on React.js -->
+            <button class="toggle-mode">Toggle Dark/Light Mode</button>
+        </div>
+    </header>
+
+    <!-- this is where you introduce yourself.
+        There is no special code for this section, so you are free 
+        to add whatever you would like in this section. 
+        If you would like to learn more about React and see what kind of funcitons
+        you can create in this section, you are free to do so :)-->
+    <section class="bio-section">
+        <div id="profile">
+            <div id="profile-picture"></div>
+        </div>
+
+        <div class="container" id="bio">
+            <h2>Bio</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil praesentium eos tempore labore doloribus veritatis debitis tempora, error ullam. Accusantium earum quam dolor aut praesentium dicta blanditiis delectus voluptatibus ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque dignissimos officia natus asperiores porro, ducimus eveniet numquam, quisquam nihil laborum quos, magnam eligendi. Sint cumque repellat autem tenetur culpa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil praesentium eos tempore labore doloribus veritatis debitis tempora, error ullam. Accusantium earum quam dolor aut praesentium dicta blanditiis delectus voluptatibus ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque dignissimos officia natus asperiores porro, ducimus eveniet numquam, quisquam nihil laborum quos, magnam eligendi. Sint cumque repellat autem tenetur culpa?</p>
+        </div>
+    </section>
+
+    <section class="education-section">
+
+        <!-- this is where you talk about your educational background 
+            There is nothing special for this section of the code so you can
+            add whatever you would like here-->
+        <div class="container" id="Education">
+            <h2>Education</h2>
+            <p>University: Mount Royal University</p>
+            <p>Program: Computer Informations System</p>
+            <p>Minors: </p>
+
+            <p>Year started: </p>
+            <p>Anticipated Gradution:</p>
+        </div>
+        
+
+        <!-- countdown timer to your graudation 
+            This is also where you will make comparisons between JavaScript and React.js
+            Make sure to read the JavaScript code to better understand how this works, before building it on React.js -->
+        <section id="countdown">
+            <h2>Countdown to Graduation</h2>
+            <div class="countdown">
+                <div class="time" id="days">00</div>
+                <div class="label">Days</div>
+                <div class="time" id="hours">00</div>
+                <div class="label">Hours</div>
+                <div class="time" id="minutes">00</div>
+                <div class="label">Minutes</div>
+                <div class="time" id="seconds">00</div>
+                <div class="label">Seconds</div>
+            </div>
+        </section>
+
+        <!-- this is where you can add the courses that you have taken already
+            there is no special code for this section so you can add 
+            whatever you would like here-->
+        <section class="courses-section">
+            <div class="container">
+                <h2>Courses</h2>
+                <ul>
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                    <li>Course 4</li>
+                    <!-- Add more courses here -->
+                </ul>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- this is where you are able to show off your level of technical skills.
+        This is also where you will make comparisons between JavaScript and React.js
+        Make sure to read the JavaScript code to better understand how this works, before building it on React.js -->
+    <section class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span class="skill-label">HTML</span>
+                <div class="skill-bar" data-progress="90%"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-label">CSS</span>
+                <div class="skill-bar" data-progress="80%"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-label">Java</span>
+                <div class="skill-bar" data-progress="70%"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-label">React</span>
+                <div class="skill-bar" data-progress="5%"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-label">Python</span>
+                <div class="skill-bar" data-progress="40%"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- this is where you can display fun facts about yourself
+        There is nothing special for this section of code, so you can add
+        whatever you would like here-->
+    <section class="fun-facts-section">
+        <div class="container" id="facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Fun Fact 1</li>
+                <li>Fun Fact 2</li>
+                <!-- Add more fun facts here-->
+            </ul>
+        </div>
+    </section>
+
+    <!-- This is where you can leave a message
+        This is also where you will make comparisons between JavaScript and React.js
+        Make sure to read the JavaScript code to better understand how this works, before building it on React.js -->
+    <div id="messageForm">
+        <h2>Leave me a Message!</h2>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="button" onclick="submitMessage()">Submit</button>
+        </form>
+    </div>
+    
+    <div id="messages">
+        <h2>Messages from others</h2>
+        <ul id="messageList"></ul>
+    </div>
+
+    <!-- this is where you can put in images and create a slideshow 
+        This is the part of the code that you will build in React.js
+        Make sure you read the JavaScript file and the instructions before beginning your
+        React.js build.
+        Images have been prepared for you in teh 'Images' folder-->
+    <div class="container" id="slideshow">
+
+        <h2>Slideshow</h2>
+        <!-- images placed here -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+            <img src="/images/mountain.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+            <img src="/images/lake.webp" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+            <img src="/images/fall.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script src="AboutMe.js"></script>
+</body>
+</html>
